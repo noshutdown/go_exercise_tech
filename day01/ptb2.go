@@ -21,9 +21,6 @@ func readNumberFromKeyboard(msg string) (result float64, err error) {
 	return result, nil
 }
 
-// func calcuDelta(a, b, c float64) float64 {
-
-// }
 func main() {
 	var a, b, c float64
 	var err error
