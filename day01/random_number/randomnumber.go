@@ -14,7 +14,6 @@ func main() {
 	if err != nil {
 		//		fmt.Print(err.Error())
 		return
-
 	}
 	cInput = int(input)
 
