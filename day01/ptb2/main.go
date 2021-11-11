@@ -1,15 +1,14 @@
 package main
 
 import (
+	ptb2 "day01/ptb2/solveEquation"
 	"day01/readnumberfromkeyboard"
 	"fmt"
-	"math"
 )
 
 func main() {
-	var a, b, c, x, x1, x2 float64
+	var a, b, c float64
 	var err error
-	var Delta float64
 
 	fmt.Println("Nhap 3 so cua phuong trinh:")
 	a, err = readnumberfromkeyboard.ReadNumberFromKeyboard("a: ")
@@ -25,19 +24,5 @@ func main() {
 		return
 	}
 
-	Delta = b*b - 4*a*c
-	if Delta == 0 {
-		x = -b / (2 * a)
-		fmt.Println("Phuong trinh co nghiem kep x1 = x2 = ", x)
-	}
-	if Delta > 0 {
-		x1 = (-b + math.Sqrt(Delta)) / (2 * a)
-		x2 = (-b - math.Sqrt(Delta)) / (2 * a)
-		fmt.Println("Phuong trinh co 2 nghiem phan biet: \n ")
-		fmt.Println("x1 =", x1)
-		fmt.Println("x2 =", x2)
-	}
-	if Delta < 0 {
-		fmt.Println("Phuong trinh vo nghiem")
-	}
+	ptb2.SolveEquation2(a, b, c)
 }
