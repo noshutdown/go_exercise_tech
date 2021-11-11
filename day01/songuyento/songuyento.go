@@ -5,15 +5,6 @@ import (
 	"fmt"
 )
 
-// func checksonguyento(n int) {
-// 	var i int
-// 	for i = 2; i < (n - 1); i++ {
-// 		if n%i == 0 {
-// 			return
-// 		}
-// 	}
-// 	fmt.Println(i)
-// }
 func main() {
 	var i int
 	// n = 30
@@ -24,7 +15,7 @@ func main() {
 		return
 	}
 	n := int(nf)
-	songuyento := []int{1, 2}
+	songuyento := []int{}
 	for n2 := 0; n2 <= n; n2++ {
 		for i = 2; i < n2; i++ {
 			if n2%i == 0 {
